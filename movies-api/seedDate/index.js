@@ -16,6 +16,7 @@ async function loadUsers() {
   }
 }
 
+// eslint-disable-next-line no-undef
 if (process.env.SEED_DB) {
   loadUsers();
 }
