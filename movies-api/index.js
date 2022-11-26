@@ -5,7 +5,7 @@ import genresRouter from './api/genres';
 import usersRouter from './api/users';
 import './db';
 import './seedDate';
-import session from 'express-session';
+//import session from 'express-session';
 import passport from './authenticate';
 
 dotenv.config();
