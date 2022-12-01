@@ -23,7 +23,7 @@ router.post('/',asyncHandler( async (req, res, next) => {
             await User.create(req.body);
             res.status(201).json({ code: 201, msg: 'Successful created new user.' });
         } else {
-            res.status(500).json({code:500, msg: 'Password not strong, user not created'})
+          res.status(500).json({ code: 500, msg: 'Password not strong, user not created' });
         }
     } else {
       const user = await User.findByUserName(req.body.username);
